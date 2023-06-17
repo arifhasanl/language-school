@@ -3,8 +3,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import { FaShoppingCart, FaWallet, FaCalendarAlt, FaHome, FaUtensils, FaBook, FaUsers, FaBookmark } from 'react-icons/fa';
 
 const Dashboard = () => {
-    const isInstructor=true;
-    const isAdmin=false;
+    const isInstructor=false;
+    const isAdmin=true;
     return (
         <div>
               <div className="drawer lg:drawer-open">
@@ -46,24 +46,18 @@ const Dashboard = () => {
                                     </div>
                                 ) : (
                                     <div className=' font-bold'>
-                                        <li><NavLink to="/dashboard/myclass"><FaBookmark></FaBookmark>My Selected Class</NavLink></li>
-                                        <li><NavLink to="/dashboard/enroll"><FaCalendarAlt></FaCalendarAlt> Enroll Class</NavLink></li>
+                                        <li><NavLink to="/dashboard/selecteClass"><FaBookmark></FaBookmark>My Selected Class</NavLink></li>
+                                        <li><NavLink to="/dashboard/enrol"><FaCalendarAlt></FaCalendarAlt> Enroll Class</NavLink></li>
 
                                         <li><NavLink to="/dashboard/history"><FaWallet></FaWallet> Payment History</NavLink></li>
                                     </div>
                                 )
 
                         }
-
-
-
-
-
-
                         <div className="divider"></div>
                         <div className=' font-bold'>
                             <li><NavLink to="/"><FaHome></FaHome> Home</NavLink> </li>
-                            <li><NavLink to="/classes"><FaWallet></FaWallet>Classes</NavLink></li>
+                            <li><NavLink to="/class"><FaWallet></FaWallet>Classes</NavLink></li>
                             <li><NavLink to="/instructor"><FaBookmark></FaBookmark>instructors</NavLink></li>
 
                         </div>

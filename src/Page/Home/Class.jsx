@@ -7,7 +7,7 @@ const Class = () => {
     const [items,setItem]=useState([])
     console.log(items);
     useEffect(()=>{
-        fetch ('menu.json')
+        fetch ('http://localhost:5000/useMenu')
     .then(res=>res.json())
     .then(datas=>{
         const populerClass=datas.filter(data=>data.category==='popular_class');
