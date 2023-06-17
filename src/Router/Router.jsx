@@ -11,6 +11,12 @@ import PrivetRout from "./PrivetRout";
 import Enrol from "../Page/Dashboard/Enrol";
 import PamentHistry from "../Page/Dashboard/PamentHistry";
 import DasContent from "../Page/Dashboard/DasContent";
+import Allusers from "../Page/Dashboard/Allusers";
+import AdminRout from "./AdminRout"
+import MangeClass from "../Page/Dashboard/Admin/MangeClass";
+import AddedClass from "../Page/Dashboard/Admin/Instructore/AddedClass";
+import InstructoreRout from "./Instructore"
+import InstructorClass from "../Page/Dashboard/Admin/Instructore/InstructorClass";
 const router=createBrowserRouter([
     {
         path:'/',
@@ -55,7 +61,23 @@ const router=createBrowserRouter([
                 {
                     path:'history',
                     element:<PamentHistry></PamentHistry>
-                }
+                },
+                {
+                    path:'alluser',
+                    element:<Allusers></Allusers>
+                },
+                {
+                    path:'addClass',
+                    element:<AddedClass></AddedClass>
+                  },
+               {
+                path:'mangeclass',
+                element:<AdminRout><MangeClass></MangeClass></AdminRout>
+               },
+               {
+                path:'instructorClass',
+                element:<InstructoreRout><InstructorClass></InstructorClass></InstructoreRout>
+              }
             ]
         }
 ])

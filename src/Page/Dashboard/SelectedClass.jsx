@@ -9,7 +9,7 @@ const SelectedClass = () => {
     const { user } = useContext(AuthContext)
     const [classes, SetClasses] = useState([])
     
-    const url = `http://localhost:5000/selectClass?email=${user?.email}`
+    const url = `https://music-school-server-arifhasan1402-gmailcom.vercel.app/selectClass?email=${user?.email}`
 
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const SelectedClass = () => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/selectClass/${_id}`, {
+                fetch(`https://music-school-server-arifhasan1402-gmailcom.vercel.app/selectClass/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

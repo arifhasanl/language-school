@@ -7,7 +7,7 @@ const Class = () => {
     const [items, setItem] = useState([])
     console.log(items);
     useEffect(() => {
-        fetch('menu.json')
+        fetch('https://music-school-server-arifhasan1402-gmailcom.vercel.app/useMenu')
             .then(res => res.json())
             .then(datas => {
                 const populerClass = datas.filter(data => data.category === 'popular_class');

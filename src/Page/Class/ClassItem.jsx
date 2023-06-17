@@ -14,7 +14,7 @@ const ClassItem = ({item}) => {
       
         if(user && user.email){
             const classItem = {menuItemId:_id, className,instructorName,seats,  image, Price, email: user?.email}
-            fetch('http://localhost:5000/selectClass', {
+            fetch('https://music-school-server-arifhasan1402-gmailcom.vercel.app/selectClass', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

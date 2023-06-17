@@ -1,10 +1,13 @@
 import React from 'react';
 import { NavLink, Outlet } from "react-router-dom";
 import { FaShoppingCart, FaWallet, FaCalendarAlt, FaHome, FaUtensils, FaBook, FaUsers, FaBookmark } from 'react-icons/fa';
+import useInstructore from '../../Hooks/useInstructore';
+import useAdmin from '../../Hooks/useAdmin';
 
 const Dashboard = () => {
-    const isInstructor=false;
-    const isAdmin=false;
+    const [isInstructor] = useInstructore()
+
+    const [isAdmin] = useAdmin()
     return (
         <div>
               <div className="drawer lg:drawer-open">
@@ -30,9 +33,9 @@ const Dashboard = () => {
 
 
 
-                                    <li><NavLink to="/dashboard/allUsers"><FaWallet></FaWallet> Manage Users</NavLink></li>
+                                    <li><NavLink to="/dashboard/alluser"><FaWallet></FaWallet> Manage Users</NavLink></li>
 
-                                    <li><NavLink to="/dashboard/manageClass"><FaBookmark></FaBookmark>Manage Classes</NavLink></li>
+                                    <li><NavLink to="/dashboard/mangeclass"><FaBookmark></FaBookmark>Manage Classes</NavLink></li>
                                 </div>
                             ) :
 

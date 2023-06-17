@@ -4,12 +4,12 @@ const useMenu = () => {
     const {data: menu = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['menu'],
         queryFn: async() => {
-            const res = await fetch('menu.json');
+            const res = await fetch('https://music-school-server-arifhasan1402-gmailcom.vercel.app/addClass');
             return res.json();
         }
     })
 
-    return [menu, refetch,loading]
+    return [menu, refetch]
 };
 
 export default useMenu;
