@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWith
 import app from "../Firebase.config";
 import { createContext, useEffect, useState } from "react";
 import { setLogLevel } from "firebase/app";
+import axios from "axios";
 
 
 export const AuthContext=createContext(null)
@@ -29,6 +30,17 @@ useEffect(()=>{
     const subscrib=onAuthStateChanged(auth,currentUser=>{
     setUser(currentUser)
     setLoding(false)
+    if(currentUser){
+        axios.post('http://localhost:5000/jwt', {email: currentUser.email})
+        .then(data=>{
+            // console.log(data.data.token);
+            localStorage.setItem('access-token',data.data.token)
+
+        })
+    }
+    else{
+        localStorage.removeItem('access-token')
+    }
     })
     return ()=>{
         return subscrib();

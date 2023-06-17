@@ -9,7 +9,7 @@ const SelectedClass = () => {
     const { user } = useContext(AuthContext)
     const [classes, SetClasses] = useState([])
     
-    const url = `https://summer-camp-school-server-kappa.vercel.app/classes?email=${user?.email}`
+    const url = `http://localhost:5000/selectClass?email=${user?.email}`
 
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const SelectedClass = () => {
             if (result.isConfirmed) {
 
 
-                fetch(`https://summer-camp-school-server-kappa.vercel.app/classes/${_id}`, {
+                fetch(`http://localhost:5000/selectClass/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -49,6 +49,9 @@ const SelectedClass = () => {
                             SetClasses(remaining)
                             
                         }
+                    })
+                    .catch(error=>{
+                        console.log(error);
                     })
 
             }

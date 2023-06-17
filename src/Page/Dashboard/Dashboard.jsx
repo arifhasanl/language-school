@@ -4,7 +4,7 @@ import { FaShoppingCart, FaWallet, FaCalendarAlt, FaHome, FaUtensils, FaBook, Fa
 
 const Dashboard = () => {
     const isInstructor=false;
-    const isAdmin=true;
+    const isAdmin=false;
     return (
         <div>
               <div className="drawer lg:drawer-open">
