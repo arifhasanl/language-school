@@ -11,7 +11,6 @@ const SignUp = () => {
     const froma = location.state?.from?.pathname || "/";
     const { createUser, upDateUser } = useContext(AuthContext);
     const [passMessage, setMessage] = useState('');
-    const [pass, setPass] = useState(null)
     const handleSingUp = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -29,7 +28,7 @@ const SignUp = () => {
                     upDateUser(name, photo)
                         .then(() => {
                             const saveUser = { name: name, email: email }
-                            fetch('https://summer-camp-school-server-kappa.vercel.app/user', {
+                            fetch('http://localhost:5000/user', {
                                 method: 'POST',
                                 headers: {
                                     'content-type': 'application/json'
