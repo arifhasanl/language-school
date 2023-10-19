@@ -39,6 +39,11 @@ const router=createBrowserRouter([
                 element:<Class></Class>
             },
             {
+                path:'/design',
+                element:<DasContent></DasContent>
+            },
+
+            {
                 path:'/instructor',
                 element:<Instructores></Instructores>
             },
