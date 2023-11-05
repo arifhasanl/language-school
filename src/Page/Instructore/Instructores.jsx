@@ -9,8 +9,8 @@ const Instructores = () => {
         fetch('menu.json')
             .then(res => res.json())
             .then(datas => {
-                const populerInstructore = datas.filter(data => data.category === 'popular_class');
-                setItem(populerInstructore)
+                
+                setItem(datas)
             })
     }, [])
     return (

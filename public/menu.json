@@ -8,7 +8,8 @@
         "imageIns":"https://img.freepik.com/premium-photo/teacher-playing-guitar-classroom_626849-2809.jpg?w=996",
         "category": "popular_class",
         "seats":"102",
-        "Price":"5200"
+        "Price":"5200",
+        "rating":"5"
     },
     {
         "image":"https://img.freepik.com/premium-vector/music-class-learning-young-students-listen-teacher-happy-man-with-guitar-teaches-children-classroom-interior-elementary-school-kindergarten-kids-musical-education-vector-flat-cartoon-concept_176411-2586.jpg?w=996",
@@ -19,7 +20,8 @@
         "imageIns":"https://img.freepik.com/free-photo/learning-play-new-song-piano-artistic-young-boy-talking-with-his-music-teacher-during-private-lesson_662251-1522.jpg?w=996&t=st=1686810156~exp=1686810756~hmac=5814f683aca377bd97e3e2b2bc1577dc9296e9a4bf938da5941ae88bbf7c6183",
         "category": "popular_class",
         "seats":"90",
-        "Price":"4320"
+        "Price":"4320",
+        "rating":"1"
     },
     {
         "image":"https://img.freepik.com/premium-photo/music-lesson-kids-how-play-piano_94347-890.jpg?w=996",
@@ -30,7 +32,8 @@
         "imageIns":"https://img.freepik.com/premium-photo/teacher-assisting-kids-play-musical-instrument-classroom_107420-35592.jpg?w=996",
         "category": "popular_class",
         "seats":"500",
-        "Price":"3500"
+        "Price":"3500",
+        "rating":"4"
     },
     {
         "image":"https://img.freepik.com/premium-photo/teacher-assisting-kids-play-musical-instrument-classroom_107420-35592.jpg?w=996",
@@ -41,7 +44,8 @@
         "image":"https://img.freepik.com/free-photo/high-angle-kids-singing-sunday-school_23-2149613759.jpg?w=996&t=st=1686810299~exp=1686810899~hmac=50d356209539652520674fb527e1a2339f403f908141f137a5559aa3a2bd753d",
         "category": "popular_class",
         "seats":"250",
-        "Price":"6500"
+        "Price":"6500",
+        "rating":"3"
     },
     {
         "image":"https://img.freepik.com/free-photo/group-kids-spending-time-after-school-together-handsome-friends-resting-after-classes-before-start-doing-homework-modern-loft-interior-schooltime-friendship-education-togetherness-concept_155003-25468.jpg?w=996&t=st=1686805280~exp=1686805880~hmac=dcc12f4965155acca701be7e472c59a7b8b21963e82736cb7c10030b794bf4ae",
@@ -52,7 +56,8 @@
         "image":"https://img.freepik.com/free-photo/side-view-girl-learning-play-piano_23-2149613758.jpg?w=996&t=st=1686810335~exp=1686810935~hmac=36c054db721e21aef065fcc60e369ff640cb7ee4388cfda00cac838f6784e5df",
         "category": "popular_class",
         "seats":"109",
-        "Price":"5680"
+        "Price":"5680",
+        "rating":"2"
     },
     {
         "image":"https://img.freepik.com/premium-vector/boy-shooting-friends-singing-concert_1308-18359.jpg?w=1060",
@@ -63,7 +68,8 @@
         "image":"https://img.freepik.com/free-photo/elearning-young-cute-beautiful-girl-remotely-giving-guitar-classes-home-excited_140725-167390.jpg?w=996&t=st=1686810373~exp=1686810973~hmac=c7b3bb1f1518cd7127c8d81194f52ceafc4b3d51eb73518e28762be90c0febb1",
         "category": "popular_class",
         "seats":"152",
-        "Price":"6230"
+        "Price":"6230",
+        "rating":"3.5"
     },
     {
         "image":"https://img.freepik.com/premium-vector/boy-shooting-friends-singing-concert_1308-18359.jpg?w=1060",
@@ -74,6 +80,7 @@
         "image":"https://img.freepik.com/free-photo/elearning-young-cute-beautiful-girl-remotely-giving-guitar-classes-home-excited_140725-167390.jpg?w=996&t=st=1686810373~exp=1686810973~hmac=c7b3bb1f1518cd7127c8d81194f52ceafc4b3d51eb73518e28762be90c0febb1",
         "category": "instructore",
         "seats":"102",
-        "Price":"5500"
+        "Price":"5500",
+        "rating":"4"
     }
 ]

@@ -7,7 +7,7 @@ const PrivetRout = ({children}) => {
     const {user,loading}=useContext(AuthContext);
     const location=useLocation();
     if(loading){
-       return <p>arif</p>
+       return <p className='text-center text-3xl'>Loading ...</p>
     }
     if(user){
         return children

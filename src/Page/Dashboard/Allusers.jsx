@@ -53,14 +53,14 @@ const Allusers = () => {
 
     
     return (
-        <div className="w-full">
+        <div className="w-full  bg-white">
         
-        <h3 className="text-3xl font-semibold my-4">Total Users: {users.length}</h3>
+        <h3 className="text-3xl font-semibold my-4 text-center text-black">Total Users: {users.length}</h3>
         <div className="overflow-x-auto">
             <table className="table table-zebra w-full">
                 {/* head */}
                 <thead>
-                    <tr>
+                    <tr className='text-2xl text-black '>
                         <th>#</th>
                         <th>Name</th>
                         <th>Email</th>

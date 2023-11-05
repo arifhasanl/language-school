@@ -1,0 +1,10 @@
+
+.select-btn{
+    transition: 0.5s;
+    transform: translateX(0);
+    background: #110032;
+}
+.select-btn:hover{
+    
+    transform: translateX(1);
+}

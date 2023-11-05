@@ -1,0 +1,9 @@
+input.input{
+    border: 1px solid black;
+    height: 35px;
+    opacity: 0.5px;
+}
+input:focus{
+    border: 1px solid black;
+    height: 35px;
+}

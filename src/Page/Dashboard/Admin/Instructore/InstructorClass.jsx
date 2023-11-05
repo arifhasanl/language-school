@@ -3,9 +3,8 @@ import useMenu from "../../../../Hooks/UseMenu/UseMenu";
 
 const InstructorClass = () => {
     const [menu, refetch] = useMenu();
-    console.log('men men menu', menu);
     return (
-        <div className='bg-emerald-500 h-full w-full'>
+        <div className=' h-full w-full'>
             <div className='w-full mt-14 '>
 
                 <div className="w-full">
@@ -20,7 +19,7 @@ const InstructorClass = () => {
                         <table className="table w-full">
                             {/* head */}
                             <thead className='font-bold'>
-                                <tr >
+                                <tr className="text-2xl text-black" >
 
                                     <th >Image</th>
                                     <th>Class Name</th>
@@ -50,14 +49,14 @@ const InstructorClass = () => {
                                             </div>
                                         </td>
                                         <td className=' text-sm font-bold'>
-                                            {addClass.name}
+                                            {addClass.className}
                                         </td>
                                         <td className='text-xl font-bold'>
                                             {addClass.seats}
                                         </td>
 
                                         <td className='text-xl font-bold'>
-                                            ${addClass.price}
+                                            ${addClass.Price}
                                         </td>
 
                                         <td>

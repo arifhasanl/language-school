@@ -73,7 +73,7 @@ const MangeClass = () => {
 
 
     return (
-        <div className='bg-cyan-500 h-full w-full '>
+        <div className=' h-full w-full '>
             <div className='mt-14 '>
 
                 <div className="w-full">
@@ -88,7 +88,7 @@ const MangeClass = () => {
                         <table className="table w-full">
                             {/* head */}
                             <thead className='font-bold'>
-                                <tr >
+                                <tr className=" text-2xl text-black" >
 
                                     <th >Image</th>
                                     <th>Class Name</th>
@@ -118,14 +118,14 @@ const MangeClass = () => {
                                             </div>
                                         </td>
                                         <td className=' text-xl font-bold'>
-                                            {addClass.name}
+                                            {addClass.className}
                                         </td>
                                         <td className='text-xl font-bold'>
                                             {addClass.seats}
                                         </td>
 
                                         <td className='text-xl font-bold'>
-                                            ${addClass.price}
+                                            ${addClass.Price}
                                         </td>
 
                                         <td>

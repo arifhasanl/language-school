@@ -7,12 +7,12 @@ import useAdmin from '../../Hooks/useAdmin';
 const Dashboard = () => {
     const [isInstructor] = useInstructore()
 
-    const [isAdmin] = useAdmin()
+    const [isAdmin,isAdminLoading] = useAdmin();
     return (
         <div>
               <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content bg-[#99f8fa] flex flex-col items-center ">
+                <div className="drawer-content  flex flex-col items-center ">
 
                     {/* Page content here */}
                     <Outlet></Outlet>
@@ -21,7 +21,8 @@ const Dashboard = () => {
 
 
                 </div>
-                <div className="drawer-side bg-[#ffb52b]">
+               <div className='border border-4 border-white'></div>
+                <div className="drawer-side bg-[#110032]">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80">
 
@@ -33,35 +34,35 @@ const Dashboard = () => {
 
 
 
-                                    <li><NavLink to="/dashboard/alluser"><FaWallet></FaWallet> Manage Users</NavLink></li>
+                                    <li className='text-white'><NavLink to="/dashboard/alluser"><FaWallet></FaWallet> Manage Users</NavLink></li>
 
-                                    <li><NavLink to="/dashboard/mangeclass"><FaBookmark></FaBookmark>Manage Classes</NavLink></li>
+                                    <li className='text-white'><NavLink to="/dashboard/mangeclass"><FaBookmark></FaBookmark>Manage Classes</NavLink></li>
                                 </div>
                             ) :
 
                             isInstructor ?
                                 (
                                     <div className=' font-bold'>
-                                        <li><NavLink to="/dashboard/addClass"><FaBookmark></FaBookmark>Add a Class</NavLink></li>
-                                        <li><NavLink to="/dashboard/instructorClass"><FaCalendarAlt></FaCalendarAlt>My Class</NavLink></li>
+                                        <li className='text-white'><NavLink to="/dashboard/addClass"><FaBookmark></FaBookmark>Add a Class</NavLink></li>
+                                        <li className='text-white'><NavLink to="/dashboard/instructorClass"><FaCalendarAlt></FaCalendarAlt>My Class</NavLink></li>
 
 
                                     </div>
                                 ) : (
                                     <div className=' font-bold'>
-                                        <li><NavLink to="/dashboard/selecteClass"><FaBookmark></FaBookmark>My Selected Class</NavLink></li>
-                                        <li><NavLink to="/dashboard/enrol"><FaCalendarAlt></FaCalendarAlt> Enroll Class</NavLink></li>
+                                        <li className='text-white'><NavLink to="/dashboard/selecteClass"><FaBookmark></FaBookmark>My Selected Class</NavLink></li>
+                                        <li className='text-white'><NavLink to="/dashboard/enrol"><FaCalendarAlt></FaCalendarAlt> Enroll Class</NavLink></li>
 
-                                        <li><NavLink to="/dashboard/history"><FaWallet></FaWallet> Payment History</NavLink></li>
+                                        <li className='text-white'><NavLink to="/dashboard/history"><FaWallet></FaWallet> Payment History</NavLink></li>
                                     </div>
                                 )
 
                         }
                         <div className="divider"></div>
                         <div className=' font-bold'>
-                            <li><NavLink to="/"><FaHome></FaHome> Home</NavLink> </li>
-                            <li><NavLink to="/class"><FaWallet></FaWallet>Classes</NavLink></li>
-                            <li><NavLink to="/instructor"><FaBookmark></FaBookmark>instructors</NavLink></li>
+                            <li className='text-white'><NavLink to="/"><FaHome></FaHome> Home</NavLink> </li>
+                            <li className='text-white'><NavLink to="/class"><FaWallet></FaWallet>Classes</NavLink></li>
+                            <li className='text-white'><NavLink to="/instructor"><FaBookmark></FaBookmark>instructors</NavLink></li>
 
                         </div>
                     </ul>
